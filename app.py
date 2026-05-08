@@ -6,6 +6,8 @@ import json
 st.title("COVID-19 Dashboard")
 
 st.header("Hospital Admissions & Deaths (Rolling Mean)")
+if st.button("Refresh Data"):
+    st.rerun()
 
 # Load JSON files
 with open("admissions.json") as f:
